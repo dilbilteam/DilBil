@@ -64,13 +64,15 @@ body {
 }
 
 .lang-btn {
-  width: 240px;
-  padding: 15px;
+  width: 85%;
+  max-width: 260px;
+  padding: 14px 10px;
   text-align: center;
   border: 2px solid #00ffff;
   color: #00ffff;
   text-decoration: none;
-  border-radius: 25px;
-  font-size: 18px;
+  border-radius: 22px;
+  font-size: 16px;
   box-shadow: 0 0 10px #00ffff;
+  white-space: nowrap;
 }
