@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öyrənməyə başla - DilBil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="lang-container">
+    <h1 id="selectedLang"></h1>
+    <p>Bu dili öyrənmək üçün davam et.</p>
+
+    <a href="https://t.me/" class="main-btn">Davam et</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const lang = params.get("lang");
+
+    const langs = {
+      english: "İngilis dili",
+      german: "Alman dili",
+      russian: "Rus dili",
+      spanish: "İspan dili"
+    };
+
+    document.getElementById("selectedLang").innerText =
+      "Sən " + (langs[lang] || "bu dili") + " öyrənmək istəyirsən";
+  </script>
+
+</body>
+</html>
